@@ -13,6 +13,7 @@ return {
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
         "mfussenegger/nvim-jdtls",
+        "mfussenegger/nvim-dap",
     },
 
     config = function()
