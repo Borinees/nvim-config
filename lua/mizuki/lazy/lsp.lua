@@ -46,7 +46,6 @@ return {
                     if server_name == "jdtls" then
                         return
                     end
-                  
                     require("lspconfig")[server_name].setup ({
                         capabilities = capabilities
                     })
@@ -88,12 +87,10 @@ return {
                 end,
                 ["jdtls"] = function()
                     local jdtls = require("jdtls")
-                       
                     jdtls.start_or_attach({
                         capabilities = capabilities,
                         cmd = {"jdtls"},
                         root_dir = vim.fs.root(0, {'gradlew', '.git', 'mvnw'}),
-                       
                         settings = {
                             java = {},
                         },

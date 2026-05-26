@@ -16,7 +16,6 @@ return {
 		if not lang or lang == "" then
 			return false
 		end
-	    	
 		return pcall(vim.treesitter.start, bufnr, lang)
 	end
 
